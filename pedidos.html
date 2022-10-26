@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Pedidos de Cupcakes</title>
+		<link rel="stylesheet" href="/css/master.css">
+	</head>
+	<body>
+		<!-- CABEÇALHO -->
+		<header>
+			<h2>Cupcakes | <span> PEDIDOS </span></h2>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="sabores.html">Sabores</a></li>
+					<li><a href="valores.html">Valores</a></li>
+					<li><a href="contato.html">Contato</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<li><a href="#">Editar Pedido</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- PEDIDOS -->
+        <main>
+			<section>
+				<fieldset>
+					<legend>PEDIDOS</legend>
+						<form action="https://formsubmit.co/macielterra@gmail.com" method="POST">
+							<!-- DADOS DO PEDIDO -->
+							<label for="email">Dados do Pedido</label> <br>
+								<input type="text" name="nome" placeholder="Nome" id="email" required><br>
+								<p class="erro">Campo obrigatorio</p><br>
+								<input type="text" name="telefone" placeholder="Telefone" id="email" required><br><br>
+								<input type="email" name="email" placeholder="Email" id="email" required><br><br>
+							<!-- SELECIONAR SABORES -->
+							<label for="sabores">Sabores</label><br>
+								<select name="sabores" required>	
+                                    <option value="" name="sabores" ></option>	
+									<option value="Batata Palha"  name="sabores" >Batata Palha</option>
+									<option value="Bombonaire"  name="sabores" >Bombonaire</option>
+									<option value="Brigadeiro"  name="sabores" >Brigadeiro</option>
+									<option value="Cereja"  name="sabores" >Cereja</option>
+									<option value="Creme"  name="sabores" >Creme</option>
+									<option value="Choco"  name="sabores" >Choco</option>
+									<option value="Côco"  name="sabores" >Côco</option>
+									<option value="Framboesa"  name="sabores" >Framboesa</option>
+									<option value="Frango"  name="sabores" >Frango</option>
+									<option value="Legumes"  name="sabores" >Legumes</option>
+									<option value="Morango"  name="sabores" >Morango</option>
+									<option value="Proteína"  name="sabores" >Proteína</option>
+									<option value="Vegano"  name="sabores" >Vegano</option>
+								</select><br><br>
+							
+							<!-- SELECIONAR QUANTIDADE -->
+							<label for="quantidade">Quantidade</label><br>
+								<select name="quantidade" required>	
+                                    <option value="" name="quantidade"></option>																		
+									<option value="20 unid" name="quantidade">20 unid</option>
+									<option value="40 unid" name="quantidade">40 unid</option>
+									<option value="50 unid" name="quantidade">50 unid</option>
+									<option value="100 unid" name="quantidade">100 unid</option>
+									<option value="150 unid" name="quantidade">150 unid</option>
+								</select>
+								<br><br>
+							<label for="assunto">Comentários</label>
+							<br>
+							<textarea name="assunto" rows="10" cols="90"></textarea>
+							<br><input type="hidden" name="_next" value="http://127.0.0.1:5500//agradecimento.html">
+							    <input type="hidden" name="_captcha" value="false">
+								<input type="submit" name="submit" value="Enviar Pedido">
+						</form>
+				</fieldset>
+			</section>
+		</main>
+	</body>
+</html>
